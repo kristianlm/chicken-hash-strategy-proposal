@@ -1,4 +1,4 @@
-(module (hash sha1) (digest-length init update! final! string->hash)
+(module (hash sha1) (digest-length init update! final!)
 (import scheme
         (chicken base)
         (chicken foreign)
@@ -40,7 +40,5 @@
    ctx blob)
   blob)
 
-(define (string->hash str)
-  (final! (update! (init) str)))
 
 )

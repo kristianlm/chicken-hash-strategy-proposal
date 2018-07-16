@@ -24,7 +24,7 @@
 <#
 
 (module (hash sha256)
-(digest-length init update! final! string->hash)
+(digest-length init update! final!)
 (import scheme
         (chicken base)
         (chicken foreign)
@@ -62,13 +62,10 @@
    ctx blob)
   blob)
 
-(define (string->hash str)
-  (final! (update! (init) str)))
-
 )
 
 (module (hash sha384)
-(digest-length init update! final! string->hash)
+(digest-length init update! final!)
 (import scheme
         (chicken base)
         (chicken foreign)
@@ -97,13 +94,10 @@
    ctx blob)
   blob)
 
-(define (string->hash str)
-  (final! (update! (init) str)))
-
 )
 
 (module (hash sha512)
-(digest-length init update! final! string->hash)
+(digest-length init update! final!)
 (import scheme
         (chicken base)
         (chicken foreign)
@@ -131,9 +125,6 @@
   ((foreign-lambda void "SHA512_Final" sha512-ctx blob)
    ctx blob)
   blob)
-
-(define (string->hash str)
-  (final! (update! (init) str)))
 
 )
 
