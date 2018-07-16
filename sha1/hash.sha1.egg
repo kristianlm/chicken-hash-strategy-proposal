@@ -1,0 +1,10 @@
+;;; simple-sha1.meta -*- scheme -*-
+
+((synopsis "A fast and simple SHA1 implementation with minimal dependencies")
+ (author "Steve Reid and felix winkelmann and Kristian Lein-Mathisen")
+ (license "Public Domain")
+ (maintainer "Kristian Lein-Mathisen")
+ (dependencies)
+ (test-dependencies test)
+ (category crypt)
+ (components (extension hash.sha1)))

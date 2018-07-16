@@ -1,0 +1,2 @@
+;; -*- scheme -*-
+((components (extension hash)))
