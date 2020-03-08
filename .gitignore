@@ -23,3 +23,6 @@
 /sha2/hash.sha384.import.so
 /sha2/hash.sha512.import.scm
 /sha2/hash.sha512.import.so
+/sha2/hash.sha2.link
+/sha2/hash.sha2.so
+/sha2/hash.sha2.static.o
