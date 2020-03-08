@@ -1,6 +1,6 @@
 ;;;; sha2.scm
 
-(declare (unit hash-sha2))
+(declare (unit hash.sha2))
 
 #>
 #define SHA2_USE_INTTYPES_H 1
